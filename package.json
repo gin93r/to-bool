@@ -1,6 +1,6 @@
 {
   "name": "@gin93r/to-bool",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Simple module to convert values to boolean values.",
   "main": "index.js",
   "scripts": {
