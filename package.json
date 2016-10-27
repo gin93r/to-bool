@@ -1,0 +1,27 @@
+{
+  "name": "@gin93r/to-bool",
+  "version": "0.0.1",
+  "description": "Simple module to convert values to boolean values.",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha --reporter spec"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gin93r/toBool.git"
+  },
+  "author": "Carl Morlock <dev@morlockweb.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/gin93r/toBool/issues"
+  },
+  "homepage": "https://github.com/gin93r/toBool#readme",
+  "engines": {
+    "node": ">=6.3.1"
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "coveralls": "^2.11.14",
+    "mocha": "^3.1.2"
+  }
+}
