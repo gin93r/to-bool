@@ -7,12 +7,6 @@ module.exports = function (val) {
         _ref$treatNullAsFalse = _ref.treatNullAsFalse,
         treatNullAsFalse = _ref$treatNullAsFalse === undefined ? true : _ref$treatNullAsFalse;
 
-    // if a string is passed we want to convert it to lower case
-    // if(console) console.group("testing options:");
-    // if(console) console.log(treatUndefinedAsFalse);
-    // if(console) console.log(treatNullAsFalse);
-    // if(console) console.groupEnd();
-
     if (typeof val == "string") val = val.toLowerCase();
     switch (val) {
         case 0:

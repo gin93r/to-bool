@@ -5,5 +5,6 @@ var a = _b("false"),
     c = _b(1),
     d = _b("true"),
     e = _b(undefined),
-    f = _b(null);
-if(console) console.log(a,b,c,d,e,f);
+    f = _b(null),
+    g = _b(undefined, {treatUndefinedAsFalse: false});
+if(console) console.log(a,b,c,d,e,f,g);
