@@ -11,10 +11,20 @@ A small library that converts typical "boolean" values to boolean
 
     var toBool = require('@gin93r/to-bool');
 
-    var b = toBool(0);
+    var b = toBool(0, [options]}); // false
   
   
-  Output should be `false`
+### Options
+
+ `treatUndefinedAsFalse` | *default*: `true`<br>
+ `treatNullAsFalse` | *default*: `true`
+
+When true, `undefined` and `null` values will be returned as `false`.
+
+When false, `undefined` and `null` will be returned as normal.
+
+    var b = toBool(undefined, {treatUndefinedAsFalse:false}) // undefined
+    var b = toBool(null, {treatNullAsFalse:false}) // null
 
 
 ## Tests

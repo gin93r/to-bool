@@ -1,10 +1,11 @@
 'use strict'
 
 var expect = require('chai').expect;
-var toBool = require('../index');
+var toBool = require('../dist/index');
 
 describe('#toBool', function()
 {
+    // require to-bool with defaults
     // check that embarkJS.toBool handles all false possibilities
     it('should return false for falsy values', function() {
         expect(toBool("0")).to.be.false;
@@ -14,7 +15,16 @@ describe('#toBool', function()
         expect(toBool(false)).to.be.false;
         expect(toBool(undefined)).to.be.false;
         expect(toBool(null)).to.be.false;
-        expect(toBool()).to.be.false;
+    });
+
+    it('should return undefined when "treatUndefinedAsFalse is false', function()
+    {
+        expect(toBool(undefined, {treatUndefinedAsFalse:false})).to.be.undefined;
+    });
+
+    it('should return null when "treatNullAsFalse is false', function()
+    {
+        expect(toBool(null, {treatNullAsFalse:false})).to.be.null;
     });
 
     // check that toBool handles all true possibilities
